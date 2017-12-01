@@ -1,0 +1,25 @@
+@import 'config';
+@import 'includes/mixins';
+
+body {
+    font-family: $font-primary-header-font-family;
+}
+
+.error {
+    @include setBackground(#ffffff, $color-error);
+}
+
+.warning {
+    @include setBackground(#ffffff, $color-warning);
+}
+
+.success {
+    @include setBackground(#ffffff, $color-success);
+}
+
+.brand-1 {
+    @include setBackground(#ffffff, $color-brand-1);
+}
+
+
+@import '../../components/toast/toast';  

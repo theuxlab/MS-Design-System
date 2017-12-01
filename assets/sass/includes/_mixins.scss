@@ -1,0 +1,16 @@
+@mixin setBackground($color: $color-normal-text, $background: #ffffff) {
+    color:$color;
+    background:$background;
+
+    a {
+        color: $color !important; 
+
+        &:hover {
+            @if $color = "#ffffff" {
+                color: darken($color, 30%) !important;
+            } @else {
+                color: lighten($color, 30%) !important;
+            }
+        }
+    }
+}
