@@ -21,5 +21,20 @@ body {
     @include setBackground(#ffffff, $color-brand-1);
 }
 
+.brand-2 {
+    @include setBackground(#ffffff, $color-brand-2);
+}
+
+
+.brand-3 {
+    @include setBackground(#ffffff, $color-brand-3);
+}
+
+
+.brand-4 {
+    @include setBackground(#ffffff, $color-brand-4);
+}
+
+
 
 @import '../../components/toast/toast';  
