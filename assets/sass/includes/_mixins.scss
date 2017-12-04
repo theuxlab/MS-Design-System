@@ -1,8 +1,10 @@
 @mixin setBackground($color: $color-normal-text, $background: #ffffff) {
     color:$color;
     background:$background;
-
-    a {
+    p {
+        color:$color;
+    }
+   /* a {
         color: $color !important; 
 
         &:hover {
@@ -12,5 +14,5 @@
                 color: lighten($color, 30%) !important;
             }
         }
-    }
-}
+    }*/
+} 

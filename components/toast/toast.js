@@ -10,9 +10,10 @@ $(document).ready(function() {
         }             
     }); // Tab key function ends here.
 
-    $('.closeToast').on('click', function() {
-        $('.toast').removeClass('open').attr("aria-hidden", true);
-        $('body').removeClass('openToast');
+    $('.krds-closeToast').on('click', function() {
+        $('.krds-toast').removeClass('open').attr("aria-hidden", true);
+        $('body').removeClass('krds-openToast');
+
 
         return false;
     });
@@ -20,10 +21,11 @@ $(document).ready(function() {
 
 function fireToast(delay = 1000) {
     setTimeout(function(){ 
-        $('.toast').addClass('open').attr("aria-hidden", false); 
+        $('.krds-toast').addClass('krds-open').attr("aria-hidden", false); 
+
 
         setTimeout(function(){ 
-            $('body').addClass('openToast');
+            $('body').addClass('krds-openToast');
         }, 2550);
     }, delay);
 }

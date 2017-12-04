@@ -1,40 +1,49 @@
 @import 'config';
 @import 'includes/mixins';
+@import 'typography/headings';
+@import 'typography/body';
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: $font-primary-header-font-family;
+    padding: 0;
+    margin: 0;
 }
 
-.error {
+.krds-error {
     @include setBackground(#ffffff, $color-error);
 }
 
-.warning {
+.krds-warning {
     @include setBackground(#ffffff, $color-warning);
 }
 
-.success {
+.krds-success {
     @include setBackground(#ffffff, $color-success);
 }
 
-.brand-1 {
+.krds-brand-1 {
     @include setBackground(#ffffff, $color-brand-1);
 }
 
-.brand-2 {
+.krds-brand-2 {
     @include setBackground(#ffffff, $color-brand-2);
 }
 
 
-.brand-3 {
+.krds-brand-3 {
     @include setBackground(#ffffff, $color-brand-3);
 }
 
 
-.brand-4 {
+.krds-brand-4 {
     @include setBackground(#ffffff, $color-brand-4);
 }
 
 
-
-@import '../../components/toast/toast';  
+@import '../../components/layout/layout';  
+@import '../../components/link/link';   
+@import '../../components/toast/toast';

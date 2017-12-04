@@ -1,0 +1,11 @@
+h1, .krds-heading {
+    @include font-primary-header();
+}
+
+h2, .krds-subheading {
+    @include font-sub-header();
+}
+
+h3, .krds-smallTitle {
+    @include font-small-title();
+}
