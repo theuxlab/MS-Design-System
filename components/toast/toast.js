@@ -11,7 +11,7 @@ $(document).ready(function() {
     }); // Tab key function ends here.
 
     $('.closeToast').on('click', function() {
-        $('.toast').removeClass('open');
+        $('.toast').removeClass('open').attr("aria-hidden", true);
         $('body').removeClass('openToast');
 
         return false;
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 function fireToast(delay = 1000) {
     setTimeout(function(){ 
-        $('.toast').addClass('open'); 
+        $('.toast').addClass('open').attr("aria-hidden", false); 
 
         setTimeout(function(){ 
             $('body').addClass('openToast');
