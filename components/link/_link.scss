@@ -1,0 +1,54 @@
+.krds-link, a {
+    color: $color-brand-1-dark;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: darken($color-brand-1-dark, 10%);
+        text-decoration: underline;
+    }
+}
+
+.krds-link__brand-1 {
+    color: $color-brand-1-dark;
+    
+    &:hover {
+        color: darken($color-brand-1-dark, 10%);
+    }
+}
+
+.krds-link__brand-2 {
+    color: $color-brand-2-dark;
+    
+    &:hover {
+        color: darken($color-brand-2-dark, 10%);
+    }
+}
+
+
+.krds-link__brand-3 {
+    color: $color-brand-3-dark;
+    
+    &:hover {
+        color: darken($color-brand-3-dark, 10%);
+    }
+}
+
+
+.krds-link__brand-4 {
+    color: $color-brand-4-dark;
+    
+    &:hover {
+        color: darken($color-brand-4-dark, 10%);
+    }
+}
+
+.krds-link__light {
+    color: #fff;
+    
+    &:hover {
+        color: #ededed;
+    }
+}
+
+

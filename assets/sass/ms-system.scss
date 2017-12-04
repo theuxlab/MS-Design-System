@@ -1,0 +1,49 @@
+@import 'config';
+@import 'includes/mixins';
+@import 'typography/headings';
+@import 'typography/body';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary-header-font-family;
+    padding: 0;
+    margin: 0;
+}
+
+.krds-error {
+    @include setBackground(#ffffff, $color-error);
+}
+
+.krds-warning {
+    @include setBackground(#ffffff, $color-warning);
+}
+
+.krds-success {
+    @include setBackground(#ffffff, $color-success);
+}
+
+.krds-brand-1 {
+    @include setBackground(#ffffff, $color-brand-1);
+}
+
+.krds-brand-2 {
+    @include setBackground(#ffffff, $color-brand-2);
+}
+
+
+.krds-brand-3 {
+    @include setBackground(#ffffff, $color-brand-3);
+}
+
+
+.krds-brand-4 {
+    @include setBackground(#ffffff, $color-brand-4);
+}
+
+
+@import '../../components/layout/layout';  
+@import '../../components/link/link';   
+@import '../../components/toast/toast';

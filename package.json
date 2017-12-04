@@ -1,0 +1,36 @@
+{
+  "name": "ms-design-system",
+  "version": "0.0.1",
+  "description": "A framework which will help push design forward at Morneau to ensure consistency and accessibility.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test ds"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theuxlab/MS-Design-System.git"
+  },
+  "keywords": [
+    "design",
+    "system",
+    "design",
+    "ux",
+    "ui"
+  ],
+  "author": "Andrew Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theuxlab/MS-Design-System/issues"
+  },
+  "homepage": "https://github.com/theuxlab/MS-Design-System#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "gulp-webserver": "^0.9.1",
+    "path": "^0.12.7",
+    "pretty-hrtime": "^1.0.3"
+  }
+}
