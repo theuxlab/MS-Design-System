@@ -1,6 +1,7 @@
 @import 'config';
 @import 'includes/mixins';
 @import 'typography/headings';
+@import 'typography/body';
 
 * {
     box-sizing: border-box;
@@ -43,6 +44,6 @@ body {
 }
 
 
-
 @import '../../components/layout/layout';  
-@import '../../components/toast/toast';    
+@import '../../components/link/link';   
+@import '../../components/toast/toast';

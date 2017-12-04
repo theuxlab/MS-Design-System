@@ -18,7 +18,7 @@
 /*
     Shadows:
 */
-.krds-heading {
+h1, .krds-heading {
   font-size: 36px;
   line-height: normal;
   color: #333333;
@@ -26,8 +26,24 @@
   font-weight: 600;
   font-family: "Open Sans", sans-serif; }
 
-.krds-subheading {
+h2, .krds-subheading {
   font-size: 24px;
+  line-height: normal;
+  color: #333333;
+  font-style: normal;
+  font-weight: 400;
+  font-family: Open Sans; }
+
+h3, .krds-smallTitle {
+  font-size: 18px;
+  line-height: normal;
+  color: #333333;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Open Sans; }
+
+p, li {
+  font-size: 16px;
   line-height: normal;
   color: #333333;
   font-style: normal;
@@ -45,59 +61,122 @@ body {
 
 .krds-error {
   color: #ffffff;
-  background: #ee3c24; }
-  .krds-error a {
-    color: #ffffff !important; }
-    .krds-error a:hover {
-      color: #b3b3b3 !important; }
+  background: #ee3c24;
+  /* a {
+        color: $color !important; 
+
+        &:hover {
+            @if $color = "#ffffff" {
+                color: darken($color, 30%) !important;
+            } @else {
+                color: lighten($color, 30%) !important;
+            }
+        }
+    }*/ }
+  .krds-error p {
+    color: #ffffff; }
 
 .krds-warning {
   color: #ffffff;
-  background: #ffcc05; }
-  .krds-warning a {
-    color: #ffffff !important; }
-    .krds-warning a:hover {
-      color: #b3b3b3 !important; }
+  background: #ffcc05;
+  /* a {
+        color: $color !important; 
+
+        &:hover {
+            @if $color = "#ffffff" {
+                color: darken($color, 30%) !important;
+            } @else {
+                color: lighten($color, 30%) !important;
+            }
+        }
+    }*/ }
+  .krds-warning p {
+    color: #ffffff; }
 
 .krds-success {
   color: #ffffff;
-  background: #82c341; }
-  .krds-success a {
-    color: #ffffff !important; }
-    .krds-success a:hover {
-      color: #b3b3b3 !important; }
+  background: #82c341;
+  /* a {
+        color: $color !important; 
+
+        &:hover {
+            @if $color = "#ffffff" {
+                color: darken($color, 30%) !important;
+            } @else {
+                color: lighten($color, 30%) !important;
+            }
+        }
+    }*/ }
+  .krds-success p {
+    color: #ffffff; }
 
 .krds-brand-1 {
   color: #ffffff;
-  background: #008fac; }
-  .krds-brand-1 a {
-    color: #ffffff !important; }
-    .krds-brand-1 a:hover {
-      color: #b3b3b3 !important; }
+  background: #008fac;
+  /* a {
+        color: $color !important; 
+
+        &:hover {
+            @if $color = "#ffffff" {
+                color: darken($color, 30%) !important;
+            } @else {
+                color: lighten($color, 30%) !important;
+            }
+        }
+    }*/ }
+  .krds-brand-1 p {
+    color: #ffffff; }
 
 .krds-brand-2 {
   color: #ffffff;
-  background: #9e3d96; }
-  .krds-brand-2 a {
-    color: #ffffff !important; }
-    .krds-brand-2 a:hover {
-      color: #b3b3b3 !important; }
+  background: #9e3d96;
+  /* a {
+        color: $color !important; 
+
+        &:hover {
+            @if $color = "#ffffff" {
+                color: darken($color, 30%) !important;
+            } @else {
+                color: lighten($color, 30%) !important;
+            }
+        }
+    }*/ }
+  .krds-brand-2 p {
+    color: #ffffff; }
 
 .krds-brand-3 {
   color: #ffffff;
-  background: #cd7107; }
-  .krds-brand-3 a {
-    color: #ffffff !important; }
-    .krds-brand-3 a:hover {
-      color: #b3b3b3 !important; }
+  background: #cd7107;
+  /* a {
+        color: $color !important; 
+
+        &:hover {
+            @if $color = "#ffffff" {
+                color: darken($color, 30%) !important;
+            } @else {
+                color: lighten($color, 30%) !important;
+            }
+        }
+    }*/ }
+  .krds-brand-3 p {
+    color: #ffffff; }
 
 .krds-brand-4 {
   color: #ffffff;
-  background: #63962f; }
-  .krds-brand-4 a {
-    color: #ffffff !important; }
-    .krds-brand-4 a:hover {
-      color: #b3b3b3 !important; }
+  background: #63962f;
+  /* a {
+        color: $color !important; 
+
+        &:hover {
+            @if $color = "#ffffff" {
+                color: darken($color, 30%) !important;
+            } @else {
+                color: lighten($color, 30%) !important;
+            }
+        }
+    }*/ }
+  .krds-brand-4 p {
+    color: #ffffff; }
 
 .krds-pageheader {
   display: -webkit-box;
@@ -113,6 +192,40 @@ body {
   border-bottom: 1px solid #ccc; }
   .krds-pageheader .krds-subheading {
     margin: 0; }
+
+.krds-link, a {
+  color: #006462;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .krds-link:hover, a:hover {
+    color: #003130;
+    text-decoration: underline; }
+
+.krds-link__brand-1 {
+  color: #006462; }
+  .krds-link__brand-1:hover {
+    color: #003130; }
+
+.krds-link__brand-2 {
+  color: #49134c; }
+  .krds-link__brand-2:hover {
+    color: #220923; }
+
+.krds-link__brand-3 {
+  color: #ab6116; }
+  .krds-link__brand-3:hover {
+    color: #7e4710; }
+
+.krds-link__brand-4 {
+  color: #4c7329; }
+  .krds-link__brand-4:hover {
+    color: #334d1c; }
+
+.krds-link__light {
+  color: #fff; }
+  .krds-link__light:hover {
+    color: #ededed; }
 
 body.krds-openToast {
   padding-top: 105px;
@@ -144,8 +257,6 @@ body.krds-openToast {
     position: fixed;
     -webkit-transform: translateY(0);
     transform: translateY(0); }
-  .krds-toast a {
-    text-decoration: underline; }
   .krds-toast .krds-closeToast {
     text-decoration: none;
     font-weight: bold;
