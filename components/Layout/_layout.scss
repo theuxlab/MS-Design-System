@@ -1,0 +1,12 @@
+.krds-pageheader {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background:$color-light-text;
+    color:$color-normal-text; 
+    border-bottom: 1px solid #ccc;
+
+    .krds-subheading {
+        margin: 0;
+    }
+}

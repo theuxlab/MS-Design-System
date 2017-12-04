@@ -1,9 +1,9 @@
 $(document).ready(function() {
     fireToast(500);
 
-    $('.closeToast').on('click', function() {
-        $('.toast').removeClass('open');
-        $('body').removeClass('openToast');
+    $('.krds-closeToast').on('click', function() {
+        $('.krds-toast').removeClass('krds-open');
+        $('body').removeClass('krds-openToast');
 
         return false;
     });
@@ -11,10 +11,10 @@ $(document).ready(function() {
 
 function fireToast(delay = 1000) {
     setTimeout(function(){ 
-        $('.toast').addClass('open'); 
+        $('.krds-toast').addClass('krds-open'); 
 
         setTimeout(function(){ 
-            $('body').addClass('openToast');
+            $('body').addClass('krds-openToast');
         }, 2550);
     }, delay);
 }

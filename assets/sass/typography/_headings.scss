@@ -1,0 +1,7 @@
+.krds-heading {
+    @include font-primary-header();
+}
+
+.krds-subheading {
+    @include font-sub-header();
+}

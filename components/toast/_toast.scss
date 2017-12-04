@@ -1,9 +1,9 @@
-body.openToast {
+body.krds-openToast {
     padding-top: 105px;
     transition: padding-top 0.5s ease-in-out;
 }
 
-.toast {
+.krds-toast {
     position: absolute;
     display: flex;
     justify-content: flex-start;
@@ -18,7 +18,7 @@ body.openToast {
     transform: translateY(-9999px);
     transition: all 3s ease-in-out;
 
-    &.open {
+    &.krds-open { 
         position: fixed;
         transform: translateY(0);
     }
@@ -27,7 +27,7 @@ body.openToast {
         text-decoration: underline;
     }
 
-    .closeToast {
+    .krds-closeToast {
         text-decoration: none;
         font-weight: bold;
         font-size: 36px;
